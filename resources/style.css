@@ -1,0 +1,24 @@
+
+
+header {
+    border: solid 3px black;
+}
+@media only screen and (min-width: 601px) {
+    .cont .mobile {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cont .mobile {
+        visibility: visible;
+    }
+
+    .mobile img{
+        width: 10%;
+    }
+
+    .cont .desktop {
+        visibility: hidden;
+    }
+}
