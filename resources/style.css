@@ -6,6 +6,7 @@
 html {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
+    margin: 0;
   }
   
   .main-content {
@@ -48,6 +49,7 @@ html {
     border-bottom: solid 1px #c6c1c1;
     background-color: rgb(185, 185, 164);
     max-height: 100px;
+    padding: 0;
   }
   
   header .content {
@@ -57,7 +59,7 @@ html {
   }
   
   header .logo {
-    flex: 1;
+    flex: 2;
   }
   
   header nav ul {
@@ -152,14 +154,23 @@ html {
         width: 20%;
     }
 
-    .cont .desktop {
+    .cont .desktop, .cont .desktop_logo {
         visibility: hidden;
+    }
+
+
+    .cont #mobile_logo {
+        font-size: 35px;
+        visibility: visible;
     }
 }
 
 /* Desktop LOGO */
 
-.desktop_logo {
-    /*text-decoration: none;*/
-    align-items: center;
+.cont {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(99, 180, 190);
+    justify-items: center;
+    padding: 10px 0 50px 0;
 }
