@@ -9,58 +9,19 @@ html {
     margin: 0;
   }
   
-  .main-content {
-    position: relative;
-    top: 5.3125rem; 
-  }
-  
-  
-  .center {
-    text-align: center;
-  }
-  
-  .button {
-    border-radius: 4px;
-    background-color: #4a4a4a;
-    color: white;
-  }
-  
-  .image-container {
-    overflow: hidden;
-  }
-  
-  .image-container img {
-    display: block;
-    max-width: 100%;
-  }
-  
-  @media only screen and (max-width: 895px) {
-    .main-content {
-      top: 2.5625rem;
-    }
-  }
+
   
   /* Header */
   
   header {
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-    border-bottom: solid 1px #c6c1c1;
-    background-color: rgb(185, 185, 164);
-    max-height: 100px;
-    padding: 0;
-  }
   
-  header .content {
-    display: flex;
-    align-items:center;
-    padding: 1.875rem;
+    height:100px;
+    position:fixed;
+    top:0;
+    width:100%;
+    font-size: 20px;
   }
-  
-  header .logo {
-    flex: 2;
-  }
+
   
   header nav ul {
     display: flex;
@@ -68,47 +29,28 @@ html {
     float: right;
     text-align: right;
     width: auto;
-    margin-right: 20px;
+    margin-right: 10px;
+    background-color: aqua;
 
   }
   
   nav li {
-    padding-left: 3.5rem;
+    padding-left: 1.5rem;
     list-style: none;
   }
   
   nav a {
-    vertical-align: bottom;
-    line-height: 1.6;
+    line-height: 1.8rem;
     font-size: 1rem;
-    color: #4a4a4a;
   }
   
-  nav .button {
-    padding: .1875rem .5rem;
-    background-color: #9dc20b;
-    line-height: 1.6;
-    color: white;
-  }
-  
-  nav li:last-child {
-    display: flex;
-  }
-  
-  header .icon {
-    width: 1rem;
-    padding-left: .75rem;
-  }
   
   
   @media only screen and (max-width: 895px) { 
     nav li:last-child {
       display: flex;
     }
-  
-    header .content {
-      padding: 1rem 1rem;
-    }
+
   }
   
   @media only screen and (max-width: 600px) {
@@ -121,9 +63,6 @@ html {
       width: 100%;
     }
   
-    header .content {
-      padding: .5rem 0;
-    }
   
     header .mobile ul {
       display: flex;
@@ -170,7 +109,41 @@ html {
 .cont {
     text-decoration: none;
     color: black;
-    background-color: rgb(99, 180, 190);
-    justify-items: center;
+    background-color: rgb(21, 90, 155);
     padding: 10px 0 50px 0;
 }
+
+
+/************************ MAIN CONTENT ******************/
+
+.main-contant {
+	display: flex;
+  padding: 20px;
+  justify-content: center;  
+  margin-top: 130px;  
+}
+
+
+
+
+.banner {
+	  width: 1000px;
+    height: 700px;
+    border: solid 15px white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("http://yesofcorsa.com/wp-content/uploads/2017/08/House-Photo-Free.jpg");
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .banner {
+        background-image: url("http://yesofcorsa.com/wp-content/uploads/2017/08/House-Photo-Free.jpg");
+        background-size: cover;
+        max-width: 700px;
+        height: 600px;
+        background-repeat: no-repeat;
+    }
+  }
