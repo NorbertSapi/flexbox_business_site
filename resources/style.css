@@ -20,6 +20,7 @@ body {
     z-index: 2;
     top:0;
     width: 100%;
+    top: -10px;
 
   }
 
@@ -38,7 +39,7 @@ header .desktop_logo {
   
   background-color: rgb(181, 223, 223);
   padding: 30px;
-  margin-top: 35px;
+  margin-top: -15px;
   margin-left: 30px;
   width: 250px;
   border-radius: 5%;
@@ -54,8 +55,7 @@ header .desktop_logo {
     background-color: rgb(25, 96, 129);
     position: fixed;
     width: 100%;
-    top: 0;
-    /*text-align: center;*/
+    top: -20px;
   }
 
   header nav ul a {
@@ -80,7 +80,7 @@ header .desktop_logo {
   }
   
 
-/* mobile size*/
+/********************************* Screen Sizes ************************************/
 
 @media only screen and (min-width: 601px) {
     .cont .mobile {
@@ -142,10 +142,8 @@ header .desktop_logo {
 	display: flex;
   padding: 20px;
   justify-content: center;  
-  margin-top: 150px; 
+  margin-top: 150px;
 }
-
-
 
 
 
@@ -153,22 +151,51 @@ header .desktop_logo {
 .banner {
 	  width: 1000px;
     height: 700px;
-    border: solid 15px white;
+    border: solid 15px rgb(104, 99, 99);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image: url("http://yesofcorsa.com/wp-content/uploads/2017/08/House-Photo-Free.jpg");
-    background-size: cover;
 
 }
+/* Different sizes of banner */
 
 @media screen and (max-width: 900px) {
 
     .banner {
-        background-image: url("http://yesofcorsa.com/wp-content/uploads/2017/08/House-Photo-Free.jpg");
-        background-size: cover;
         max-width: 700px;
         height: 600px;
-        background-repeat: no-repeat;
     }
+
   }
+  
+@media screen and (min-width: 601px) {
+    .name{
+      visibility: hidden;
+    }
+}
+
+.about {
+  margin: 30px;
+}
+
+.picture1 {
+  background-image: url("https://classroomclipart.com/images/gallery/Clipart/Construction/two_men_reviewing_construction.jpg");
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  padding: 20px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+}
+
+.about h2 {
+  text-decoration: underline;
+}
+
+.about p {
+  font-style: italic;
+  text-align: justify;
+}
