@@ -106,7 +106,7 @@ header .desktop_logo {
     .cont #mobile_logo {
         font-size: 1rem;
         visibility: visible;
-        margin-top: -80px;
+        margin-top: -40px;
     }
 
 
@@ -175,6 +175,8 @@ header .desktop_logo {
     }
 }
 
+
+/***************** About Section ********************/
 .about {
   margin: 30px;
 }
@@ -198,4 +200,54 @@ header .desktop_logo {
 .about p {
   font-style: italic;
   text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+
+  .about p {
+    visibility: hidden;
+  }
+}
+
+/******************** Message ******************/
+h2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-style: italic;
+}
+
+/***************************** Dream Section *********************/
+
+
+.dream {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: space-around;
+  margin: 50px;
+  padding: 20px;
+}
+
+.dream .dream_img {
+  width: 400px;
+  height: 300px;
+  border: solid 15px white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 5px solid rgb(88, 88, 88);
+}
+
+.dream #img1 {
+  background-image: url("https://i.pinimg.com/originals/7f/3e/73/7f3e7339dd995ea89d15856cfc3738b2.jpg");
+}
+
+.dream #img2 {
+  background-image: url("https://www.itl.cat/pngfile/big/98-981532_thumper-wallpaper.jpg");
+}
+
+.dream #img3 {
+ background-image: url("http://profigarden.hu/s/www_profigarden_hu/i/301_l.jpg");
 }
