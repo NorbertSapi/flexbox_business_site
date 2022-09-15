@@ -39,10 +39,9 @@ header .desktop_logo {
   
   background-color: rgb(181, 223, 223);
   padding: 30px;
-  margin-top: -15px;
+  margin-top: -30px;
   margin-left: 30px;
   width: 250px;
-  border-radius: 5%;
   border: 1px solid black;
   font-weight: bold;
 }
@@ -145,7 +144,10 @@ header .desktop_logo {
   margin-top: 150px;
 }
 
-
+h2 {
+  text-align: center;
+  opacity: 0.6;
+}
 
 
 .banner {
@@ -178,7 +180,7 @@ header .desktop_logo {
 
 /***************** About Section ********************/
 .about {
-  margin: 30px;
+  margin-top: 150px;
 }
 
 .picture1 {
@@ -200,20 +202,23 @@ header .desktop_logo {
 .about p {
   font-style: italic;
   text-align: justify;
+  line-height: 150%;
 }
 
 @media screen and (max-width: 600px) {
-
-  .about p {
-    visibility: hidden;
-  }
+  .picture1 {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    width: 40%;
+  }  
 }
 
 /******************** Message ******************/
 h2 {
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
   font-style: italic;
 }
 
@@ -237,7 +242,8 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border: 5px solid rgb(88, 88, 88);
+  border: 5px solid rgb(124, 118, 118);
+  margin: 20px;
 }
 
 .dream #img1 {
