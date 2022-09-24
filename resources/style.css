@@ -200,12 +200,6 @@ h1 {
 
   }
   
-@media screen and (min-width: 601px) {
-    .name{
-      //visibility: hidden;
-    }
-}
-
 
 /***************** About Section ********************/
 .about {
